@@ -35,7 +35,8 @@ def setup_logging(log_file="app.log", log_level=logging.INFO):
 
     # File Handler with rotation
     file_handler = RotatingFileHandler(
-        log_file, maxBytes=5 * 1024 * 1024, backupCount=5
+        log_file, maxBytes=5 * 1024 * 1024, backupCount=5,
+        encoding = "UTF-8"
     )
     file_handler.setLevel(log_level)
     file_handler.setFormatter(formatter)
