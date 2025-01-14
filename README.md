@@ -119,3 +119,5 @@ You can see different resumes based on my information that are generated specifi
 
 - Example 3
 ![3](./assets/resume%20(3).png)
+
+Also you can see an example of generated pdf in [here](./assets/example.pdf).
