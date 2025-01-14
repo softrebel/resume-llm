@@ -106,3 +106,16 @@ Example:
 }
 ```
 
+
+## Examples
+
+You can see different resumes based on my information that are generated specific for job description:
+
+- Example 1
+![1](./assets/resume%20(1).png)
+
+- Example 2
+![2](./assets/resume%20(2).png)
+
+- Example 3
+![3](./assets/resume%20(3).png)
