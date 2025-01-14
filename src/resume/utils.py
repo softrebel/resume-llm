@@ -4,7 +4,6 @@ from src._core import project_configs
 from src.resume.schema import ResumeBase, ResumeGenerated
 import json
 import markdown
-import os
 import pdfkit
 
 
