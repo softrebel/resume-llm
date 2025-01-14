@@ -7,7 +7,7 @@ This project generates a PDF resume based on:
 
 ## Setup
 
-1. Install dependencies via `UV`:
+1. Install dependencies via [uv](https://docs.astral.sh/uv/getting-started/installation/) (An extremely fast Python package and project manager, written in Rust):
     ```bash
     uv sync
     ```
