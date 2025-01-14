@@ -1,0 +1,15 @@
+[project]
+name = "resume-llm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-generativeai>=0.8.3",
+    "pdfkit>=1.0.0",
+    "pydantic>=2.10.4",
+    "pydantic-settings>=2.7.1",
+    "markdown>=3.7",
+    "click>=8.1.8",
+]
+
