@@ -1,9 +1,7 @@
 import click
 import json
 import os
-import pdfkit
-import markdown
-from src._core import project_configs, logging
+from src._core import logging
 from src.resume.utils import (
     generate_resume_for_job,
     setup_resume_llm,
@@ -12,6 +10,24 @@ from src.resume.utils import (
     save_pdf,
 )
 from src.resume.schema import ResumeBase
+
+
+"""
+This script generates a PDF resume based on a JSON resume, a Markdown template, and a job description.
+Functions:
+    generate_resume(resume_json, template_md, job_description, output_pdf):
+        Command-line interface function to generate a PDF resume.
+Usage:
+    Run this script from the command line with the appropriate options:
+    python generate.py --resume-json <path_to_resume_json> --template-md <path_to_template_md> --job-description <job_description> --output-pdf <path_to_output_pdf>
+Options:
+    --resume-json: Path to the JSON file containing the resume data. Default is "resume.json".
+    --template-md: Path to the Markdown template file. Default is "src/resume/template.md".
+    --job-description: Job description for the position. This option is required.
+    --output-pdf: Path to save the generated PDF resume. Default is "output.pdf".
+Example:
+    python generate.py --resume-json resume.json --template-md src/resume/template.md --job-description "Software Engineer at XYZ Corp" --output-pdf output.pdf
+"""
 
 
 @click.command()

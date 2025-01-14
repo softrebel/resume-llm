@@ -10,7 +10,7 @@ class Configs(BaseSettings):
     DATABASE_URL: str | None = None
     TEMP_PATH: str | None = None
     WKHTMLTOPDF_PATH: str | None = None
-    TEMPLATE_HEADER:str =""
+    TEMPLATE_HEADER: str = ""
 
     model_config = SettingsConfigDict(env_file=".env")
 
